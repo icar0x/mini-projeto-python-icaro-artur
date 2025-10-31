@@ -27,12 +27,12 @@ def cadastrar_produto():
         for i, cat in enumerate(categorias, start=1):  # enumera() gera número e item
             print(f"{i} - {cat}")
 
-        # Usuário escolhe o número da categoria
+        
         escolha = int(input("Escolha a categoria (número): "))
 
         # Verifica se o número digitado está dentro do intervalo válido
         if escolha < 1 or escolha > len(categorias):
-            print("⚠️ Categoria inválida!")
+            print(" Categoria inválida!")
             return
 
         # Pega o nome da categoria com base no número escolhido
@@ -51,18 +51,18 @@ def cadastrar_produto():
         produtos.append(produto)
         codigo_cad.add(codigo)
 
-        print(" Produto cadastrado com sucesso!\n")
+        print(" Produto cadastrado com sucesso!")
         sleep(1)  
 
     
     except ValueError:
-        print(" Valor inválido! Digite corretamente.\n")
+        print(" Valor inválido! Digite corretamente.")
 
 
 def listar_produtos():
     # Verifica se a lista está vazia
     if not produtos:
-        print(" Nenhum produto cadastrado.\n")
+        print(" Nenhum produto cadastrado.")
         return
 
     # Exibe todos os produtos de forma formatada
@@ -100,10 +100,10 @@ def atualizar_produto():
                 return  # Sai da função após atualizar
 
         # Se o código não for encontrado
-        print(" Produto não encontrado.\n")
+        print(" Produto não encontrado.")
 
     except ValueError:
-        print(" Entrada inválida!\n")
+        print(" Entrada inválida!")
 
 
 def excluir_produto():
@@ -120,10 +120,10 @@ def excluir_produto():
                 return
 
         
-        print(" Produto não encontrado.\n")
+        print(" Produto não encontrado")
 
     except ValueError:
-        print(" Entrada inválida!\n")
+        print(" Entrada inválida!")
 
 
 while True:
@@ -155,4 +155,4 @@ while True:
         sleep(1)
         print("Obrigado pelo uso do sistema, volte sempre!")
         break  # Encerra o loop principal (fecha o sistema)
-    print(" Opção inválida, tente novamente!\n")
+    print(" Opção inválida, tente novamente!")
