@@ -96,7 +96,7 @@ def atualizar_produto():
                 if nova_qtd:
                     p["quantidade"] = int(nova_qtd)
 
-                print("✅ Produto atualizado com sucesso!")
+                print("Produto atualizado com sucesso!")
                 return  # Sai da função após atualizar
 
         # Se o código não for encontrado
