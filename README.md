@@ -7,8 +7,8 @@ Este repositório contém dois sistemas desenvolvidos em Python, com interface d
 Os projetos foram criados com o objetivo de aplicar estruturas de repetição, estruturas de dados e lógica de programação para resolver problemas práticos do dia a dia.
 
 Desenvolvido pela dupla:
-Icaro Ryan / icar0x
-Artur Alves / Artur-Alves7
+* Icaro Ryan / icar0x
+* Artur Alves / Artur-Alves7
 
 
 # # 📦 Sistema de Controle de Estoque para Pequena Loja (Python)
@@ -38,6 +38,9 @@ O sistema apresenta um menu interativo que permite realizar as seguintes operaç
 | **Categorias**           | **Tupla (`tuple`)**     | Lista imutável de categorias disponíveis (Ex: `("Alimentos", "Limpeza", "Bebidas")`).      |
 | **Fluxo de Sistema**     | **`while` loop**        | Mantém o menu principal em execução até que o usuário escolha sair.                        |
 | **Manipulação de Dados** | **`for` loop**          | Utilizado para listar produtos e iterar sobre a lista de estoque em buscas e atualizações. |
+
+
+
 
 
 ## 🎓 Sistema de Controle de Alunos e Notas (Python)
