@@ -4,9 +4,9 @@
 
 Este projeto consiste em um sistema simples de gerenciamento de estoque, desenvolvido em Python, com interface de linha de comando (CLI). O objetivo é informatizar o controle de produtos de uma pequena loja, permitindo o cadastro, a visualização, a busca, a atualização e a exclusão de itens do estoque.
 
-O sistema foi desenvolvido como trabalho prático da disciplina [**Nome da Disciplina ou Contexto do Trabalho**] pela dupla:
-* [Seu Nome/GitHub User]
-* [Nome do Amigo/GitHub User]
+O sistema foi desenvolvido como trabalho prático da disciplina [**Python**] pela dupla:
+* [Icaro Ryan/icar0x]
+* [Artur alves/Artur-Alves7]
 
 ## ✨ Funcionalidades
 
