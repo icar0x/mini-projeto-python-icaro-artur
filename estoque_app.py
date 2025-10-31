@@ -30,7 +30,7 @@ def cadastrar_produto():
         
         escolha = int(input("Escolha a categoria (número): "))
 
-        # Verifica se o número digitado está dentro do intervalo válido
+        
         if escolha < 1 or escolha > len(categorias):
             print(" Categoria inválida!")
             return
@@ -60,7 +60,7 @@ def cadastrar_produto():
 
 
 def listar_produtos():
-    # Verifica se a lista está vazia
+    
     if not produtos:
         print(" Nenhum produto cadastrado.")
         return
@@ -99,7 +99,7 @@ def atualizar_produto():
                 print("Produto atualizado com sucesso!")
                 return  # Sai da função após atualizar
 
-        # Se o código não for encontrado
+        
         print(" Produto não encontrado.")
 
     except ValueError:
@@ -108,7 +108,7 @@ def atualizar_produto():
 
 def excluir_produto():
     try:
-        # Solicita o código do produto a ser removido
+        
         codigo = int(input("Digite o código do produto que deseja excluir: "))
 
         # Procura o produto na lista
@@ -116,7 +116,7 @@ def excluir_produto():
             if p["codigo"] == codigo:
                 produtos.remove(p)  # Remove da lista
                 codigo_cad.remove(codigo)  # Remove do conjunto de códigos
-                print(" Produto excluído com sucesso!\n")
+                print(" Produto excluído com sucesso!")
                 return
 
         
@@ -141,7 +141,7 @@ while True:
 
     opcao = input("Qual opção você deseja? ").lower().strip()
 
-    # Verifica o que o usuário digitou e chama a função correspondente
+    
     if opcao in ("1", "cadastrar", "cadastrar produto"):
         cadastrar_produto()
     elif opcao in ("2", "listar", "listar produtos"):
@@ -154,5 +154,5 @@ while True:
         print("Saindo do sistema...")
         sleep(1)
         print("Obrigado pelo uso do sistema, volte sempre!")
-        break  # Encerra o loop principal (fecha o sistema)
+        break  
     print(" Opção inválida, tente novamente!")
