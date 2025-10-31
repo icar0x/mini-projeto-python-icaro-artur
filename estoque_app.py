@@ -14,7 +14,7 @@ def cadastrar_produto():
 
       
         if codigo in codigo_cad:
-            print(" Código já cadastrado! Tente outro.\n")
+            print(" Código já cadastrado! Tente outro.")
             return  # Sai da função sem cadastrar o produto
 
        
@@ -23,7 +23,7 @@ def cadastrar_produto():
         quantidade = int(input("Digite a quantidade em estoque: "))
 
         # Mostra todas as categorias disponíveis numeradas
-        print("\nCategorias disponíveis:")
+        print("Categorias disponíveis:")
         for i, cat in enumerate(categorias, start=1):  # enumera() gera número e item
             print(f"{i} - {cat}")
 
@@ -66,7 +66,7 @@ def listar_produtos():
         return
 
     # Exibe todos os produtos de forma formatada
-    print("\n Lista de produtos:")
+    print(" Lista de produtos:")
     for p in produtos:
         print(f"Código: {p['codigo']} | Nome: {p['nome']} | Preço: R${p['preco']:.2f} | "
               f"Qtd: {p['quantidade']} | Categoria: {p['categoria']}")
@@ -96,7 +96,7 @@ def atualizar_produto():
                 if nova_qtd:
                     p["quantidade"] = int(nova_qtd)
 
-                print("✅ Produto atualizado com sucesso!\n")
+                print("✅ Produto atualizado com sucesso!")
                 return  # Sai da função após atualizar
 
         # Se o código não for encontrado
