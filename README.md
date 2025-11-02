@@ -1,43 +1,127 @@
-## 🐍 Mini Projetos em Python – Sistemas de Controle
+🛒 Sistema de Gerenciamento de Produtos
 
-## 📘 Sobre o Repositório
+Este sistema em Python permite cadastrar, listar, atualizar e excluir produtos de forma simples e interativa, diretamente pelo terminal.
+Foi desenvolvido para facilitar o controle básico de estoque de uma pequena loja.
 
-Este repositório contém dois sistemas desenvolvidos em Python, com interface de linha de comando (CLI), como parte da disciplina Programação I – Python, no curso de Engenharia de Software.
+⚙️ Funcionalidades
 
-Os projetos foram criados com o objetivo de aplicar estruturas de repetição, estruturas de dados e lógica de programação para resolver problemas práticos do dia a dia.
+O sistema apresenta um menu interativo, que permanece ativo até o usuário escolher sair.
 
-Desenvolvido pela dupla:
-* Icaro Ryan / icar0x
-* Artur Alves / Artur-Alves7
+Menu principal:
+******************************
+            MENU
+******************************
+
+1 - Cadastrar produto
+2 - Listar produtos
+3 - Atualizar produto
+4 - Excluir produto
+0 - Sair
+
+🧩 Opções do Menu
+📝 1 - Cadastrar produto
+
+Permite registrar um novo produto no sistema.
+Durante o cadastro, o usuário informa:
+
+Código do produto (número único)
+
+Nome do produto
+
+Preço
+
+Quantidade em estoque
+
+Categoria (selecionada de uma lista pré-definida)
+
+⚠️ Caso o código já esteja cadastrado, o sistema exibirá uma mensagem de erro e não fará o registro.
+
+Exemplo de uso:
+
+Digite o código do produto: 101
+Digite o nome do produto: Arroz Integral
+Digite o preço do produto: 12.50
+Digite a quantidade em estoque: 20
+Categorias disponíveis:
+1 - Comida
+2 - Limpeza
+3 - Bebidas
+4 - Higiene
+5 - Cosméticos
+Escolha a categoria (número): 1
+Produto cadastrado com sucesso!
+
+📋 2 - Listar produtos
+
+Mostra todos os produtos cadastrados com informações completas:
+
+Código: 101 | Nome: Arroz Integral | Preço: R$12.50 | Qtd: 20 | Categoria: Comida
 
 
-# # 📦 Sistema de Controle de Estoque para Pequena Loja (Python)
+Se nenhum produto estiver cadastrado, o sistema informará:
 
-## 🌟 Sobre o Projeto
+Nenhum produto cadastrado.
 
-Este projeto consiste em um sistema simples de gerenciamento de estoque, desenvolvido em Python, com interface de linha de comando (CLI). O objetivo é informatizar o controle de produtos de uma pequena loja, permitindo o cadastro, a visualização, a busca, a atualização e a exclusão de itens do estoque.
+✏️ 3 - Atualizar produto
 
-## ✨ Funcionalidades
+Permite modificar as informações de um produto existente.
+O usuário pode alterar:
 
-O sistema apresenta um menu interativo que permite realizar as seguintes operações:
+Nome
 
-1.  **Cadastrar Produto:** Adiciona um novo item ao estoque.
-2.  **Listar Produtos:** Exibe todos os produtos cadastrados com seus detalhes.
-3.  **Buscar Produto:** Permite encontrar um produto específico pelo código ou nome.
-4.  **Atualizar Produto:** Modifica as informações (nome, preço, quantidade, etc.) de um produto existente.
-5.  **Excluir Produto:** Remove um produto do estoque.
-6.  **Sair:** Encerra a execução do sistema.
+Preço
 
-## ⚙️ Estrutura de Dados e Requisitos Atendidos
+Quantidade
 
-| Requisito                | Estrutura Utilizada     | Propósito                                                                                  |
-| :----------------------- | :---------------------- | :----------------------------------------------------------------------------------------- |
-| **Produto**              | **Dicionário (`dict`)** | Armazena os dados de um único produto (`codigo`, `nome`, `preco`, `quantidade`).           |
-| **Estoque**              | **Lista (`list`)**      | Armazena todos os dicionários de produtos cadastrados.                                     |
-| **Controle de Código**   | **Conjunto (`set`)**    | Garante que os códigos de produtos sejam únicos, evitando duplicatas.                      |
-| **Categorias**           | **Tupla (`tuple`)**     | Lista imutável de categorias disponíveis (Ex: `("Alimentos", "Limpeza", "Bebidas")`).      |
-| **Fluxo de Sistema**     | **`while` loop**        | Mantém o menu principal em execução até que o usuário escolha sair.                        |
-| **Manipulação de Dados** | **`for` loop**          | Utilizado para listar produtos e iterar sobre a lista de estoque em buscas e atualizações. |
+Caso não queira alterar um campo, basta pressionar Enter para manter o valor atual.
+
+Exemplo de uso:
+
+Digite o código do produto que deseja atualizar: 101
+Produto atual: {'codigo': 101, 'nome': 'Arroz Integral', 'preco': 12.5, 'quantidade': 20, 'categoria': 'Comida'}
+Novo nome (ou Enter para manter): Arroz Integral 1kg
+Novo preço (ou Enter para manter): 13.00
+Nova quantidade (ou Enter para manter): 25
+Produto atualizado com sucesso!
+
+🗑️ 4 - Excluir produto
+
+Remove um produto do sistema com base no seu código.
+
+Exemplo de uso:
+
+Digite o código do produto que deseja excluir: 101
+Produto excluído com sucesso!
+
+
+Caso o código não exista:
+
+Produto não encontrado
+
+🚪 0 - Sair
+
+Finaliza o programa exibindo uma mensagem de despedida:
+
+Saindo do sistema...
+Obrigado pelo uso do sistema, volte sempre!
+
+🧠 Estrutura Interna
+
+produtos → Lista que armazena os produtos cadastrados.
+
+codigo_cad → Conjunto usado para garantir códigos únicos.
+
+categorias → Tupla com as categorias disponíveis.
+
+Funções principais:
+
+cadastrar_produto()
+
+listar_produtos()
+
+atualizar_produto()
+
+excluir_produto()
 
 
 
