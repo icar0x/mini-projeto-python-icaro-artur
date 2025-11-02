@@ -10,13 +10,14 @@ O sistema apresenta um menu interativo, que permanece ativo até o usuário esco
 Menu principal:
 ******************************
             MENU
+    1 - Cadastrar produto
+    2 - Listar produtos
+    3 - Atualizar produto
+    4 - Excluir produto
+    0 - Sair
 ******************************
 
-1 - Cadastrar produto
-2 - Listar produtos
-3 - Atualizar produto
-4 - Excluir produto
-0 - Sair
+
 
 🧩 Opções do Menu
 📝 1 - Cadastrar produto
