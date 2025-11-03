@@ -222,6 +222,7 @@ Exemplo de saída:
 Matrícula: A001 | Média: 8.17 | Aprovado ✅
 Matrícula: A002 | Média: 5.50 | Reprovado ❌
 
+
 📊 6 - Relatórios
 
 Gera relatórios automáticos conforme a opção escolhida:
@@ -250,10 +251,11 @@ Finaliza o programa exibindo uma mensagem de despedida:
 Saindo do sistema...
 
 ## 🧠 Estrutura Interna
-Estrutura	Função
-alunos (dict)	Dicionário principal que armazena as matrículas e notas. Ex: {"A001": (8.0, 7.5, 9.0)}
-nomes_cadastrados (set)	Conjunto usado para evitar duplicatas de alunos.
-listas temporárias	Usadas para coletar notas antes de transformá-las em tuplas.
+| Estrutura                   | Função                                                                                   |
+| --------------------------- | ---------------------------------------------------------------------------------------- |
+| **alunos (dict)**           | Dicionário principal que armazena as matrículas e notas. Ex: `{"A001": (8.0, 7.5, 9.0)}` |
+| **nomes_cadastrados (set)** | Conjunto usado para evitar duplicatas de alunos.                                         |
+| **listas temporárias**      | Usadas para coletar notas antes de transformá-las em tuplas.                             |
 
 ## 🧱 Funções principais
 
