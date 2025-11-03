@@ -137,6 +137,7 @@ Foi desenvolvido para auxiliar professores no acompanhamento das notas e aprova�
 
 O sistema apresenta um menu interativo, que permanece ativo até o usuário escolher sair.
 
+******************************
         MENU
 1 - Cadastrar aluno
 2 - Registrar notas
@@ -145,6 +146,7 @@ O sistema apresenta um menu interativo, que permanece ativo até o usuário esco
 5 - Mostrar aprovados e reprovados
 6 - Relatórios
 0 - Sair
+******************************
 
 ## 🧩 Opções do Menu
 📝 1 - Cadastrar aluno
@@ -174,9 +176,13 @@ As notas devem ser valores entre 0 e 10.
 Exemplo de uso:
 
 Digite a matrícula do aluno: A001
+
 Digite a 1ª nota: 8.0
+
 Digite a 2ª nota: 7.5
+
 Digite a 3ª nota: 9.0
+
 ✅ Notas registradas com sucesso!
 
 📋 3 - Listar alunos e médias
@@ -187,6 +193,7 @@ Exemplo de saída:
 
 === LISTA DE ALUNOS E MÉDIAS ===
 Matrícula: A001 | Notas: (8.0, 7.5, 9.0) | Média: 8.17
+
 Matrícula: A002 | Notas: (5.0, 6.0, 5.5) | Média: 5.50
 
 Se nenhum aluno estiver cadastrado:
@@ -220,8 +227,8 @@ Exemplo de saída:
 
 === RESULTADO FINAL ===
 Matrícula: A001 | Média: 8.17 | Aprovado ✅
-Matrícula: A002 | Média: 5.50 | Reprovado ❌
 
+Matrícula: A002 | Média: 5.50 | Reprovado ❌
 
 📊 6 - Relatórios
 
@@ -237,8 +244,11 @@ Exemplo:
 
 === RELATÓRIOS ===
 1 - Alunos cadastrados
+
 2 - Médias individuais
+
 3 - Aprovados e Reprovados
+
 Escolha uma opção: 2
 
 === LISTA DE ALUNOS E MÉDIAS ===
