@@ -1,9 +1,9 @@
-🛒 Sistema de Gerenciamento de Produtos
+## 🛒 Sistema de Gerenciamento de Produtos
 
 Este sistema em Python permite cadastrar, listar, atualizar e excluir produtos de forma simples e interativa, diretamente pelo terminal.
 Foi desenvolvido para facilitar o controle básico de estoque de uma pequena loja.
 
-⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
 O sistema apresenta um menu interativo, que permanece ativo até o usuário escolher sair.
 
@@ -19,7 +19,7 @@ Menu principal:
 
 
 
-🧩 Opções do Menu
+## 🧩 Opções do Menu
 📝 1 - Cadastrar produto
 
 Permite registrar um novo produto no sistema.
@@ -106,7 +106,7 @@ Finaliza o programa exibindo uma mensagem de despedida:
 Saindo do sistema...
 Obrigado pelo uso do sistema, volte sempre!
 
-🧠 Estrutura Interna
+## 🧠 Estrutura Interna
 
 produtos → Lista que armazena os produtos cadastrados.
 
@@ -114,7 +114,7 @@ codigo_cad → Conjunto usado para garantir códigos únicos.
 
 categorias → Tupla com as categorias disponíveis.
 
-Funções principais:
+## 🧱 Funções principais:
 
 cadastrar_produto()
 
@@ -128,32 +128,143 @@ excluir_produto()
 
 
 
-## 🎓 Sistema de Controle de Alunos e Notas (Python)
+## 🎓 Sistema de Controle de Alunos e Notas
 
-## 🌟 Sobre o Projeto
+Este sistema em Python permite cadastrar alunos, registrar notas, calcular médias e exibir relatórios de desempenho.
+Foi desenvolvido para auxiliar professores no acompanhamento das notas e aprovação dos alunos de forma prática e interativa, diretamente pelo terminal.
 
-Este projeto consiste em um sistema simples de controle de alunos e notas, desenvolvido em Python, com interface de linha de comando (CLI). O objetivo é ajudar professores a registrar alunos, lançar notas e calcular médias automaticamente, facilitando o acompanhamento do desempenho da turma.
+## ⚙️ Funcionalidades
 
-## ✨ Funcionalidades
+O sistema apresenta um menu interativo, que permanece ativo até o usuário escolher sair.
 
-O sistema apresenta um menu interativo, permitindo realizar as seguintes operações:
+        MENU
+1 - Cadastrar aluno
+2 - Registrar notas
+3 - Listar alunos e médias
+4 - Buscar aluno
+5 - Mostrar aprovados e reprovados
+6 - Relatórios
+0 - Sair
 
-1. **Cadastrar Aluno** – Registra um novo aluno no sistema.
-2. **Registrar Notas** – Adiciona as notas de um aluno cadastrado.
-3. **Listar Alunos e Médias** – Exibe todos os alunos cadastrados com suas respectivas médias.
-4. **Buscar Aluno** – Permite localizar um aluno específico pelo nome ou matrícula.
-5. **Mostrar Aprovados e Reprovados** – Exibe alunos classificados conforme o desempenho (média ≥ 7: aprovado).
-6. **Relatórios** – Gera relatórios com diferentes informações: lista de alunos cadastrados, médias individuais e alunos aprovados e reprovados.
-7. **Sair** – Encerra a execução do sistema.
+## 🧩 Opções do Menu
+📝 1 - Cadastrar aluno
 
-## ⚙️ Estrutura de Dados e Requisitos Atendidos
+Permite registrar um novo aluno no sistema.
+Durante o cadastro, o usuário informa:
 
-| Requisito              | Estrutura Utilizada     | Propósito                                                                               |
-| :--------------------- | :---------------------- | :-------------------------------------------------------------------------------------- |
-| **Aluno**              | **Dicionário (`dict`)** | Armazena a matrícula como chave e as notas como valor. Ex: `{ "Ana": (8.0, 7.5, 9.0) }` |
-| **Notas Temporárias**  | **Lista (`list`)**      | Guarda as notas antes de convertê-las em tupla.                                         |
-| **Controle de Alunos** | **Conjunto (`set`)**    | Evita cadastros duplicados de alunos.                                                   |
-| **Notas Finais**       | **Tupla (`tuple`)**     | Armazena as notas de forma imutável.                                                    |
-| **Cálculo de Médias**  | **`for` loop**          | Percorre as notas dos alunos para calcular e exibir médias.                             |
-| **Menu Interativo**    | **`while` loop**        | Mantém o sistema em execução até o usuário escolher sair.                               |
+Matrícula (identificador único do aluno)
 
+Nome completo do aluno
+
+⚠️ Caso o aluno já esteja cadastrado, o sistema exibirá uma mensagem de erro e não fará o registro.
+
+Exemplo de uso:
+
+Digite a matrícula do aluno: A001
+Digite o nome do aluno: Ana Silva
+✅ Aluno 'Ana Silva' cadastrado com sucesso!
+
+✍️ 2 - Registrar notas
+
+Permite registrar até 3 notas para um aluno já cadastrado.
+As notas devem ser valores entre 0 e 10.
+
+⚠️ Caso a matrícula não exista, o sistema exibirá uma mensagem de erro.
+
+Exemplo de uso:
+
+Digite a matrícula do aluno: A001
+Digite a 1ª nota: 8.0
+Digite a 2ª nota: 7.5
+Digite a 3ª nota: 9.0
+✅ Notas registradas com sucesso!
+
+📋 3 - Listar alunos e médias
+
+Mostra todos os alunos cadastrados, suas notas e a média final calculada automaticamente.
+
+Exemplo de saída:
+
+=== LISTA DE ALUNOS E MÉDIAS ===
+Matrícula: A001 | Notas: (8.0, 7.5, 9.0) | Média: 8.17
+Matrícula: A002 | Notas: (5.0, 6.0, 5.5) | Média: 5.50
+
+Se nenhum aluno estiver cadastrado:
+
+Nenhum aluno cadastrado.
+
+🔍 4 - Buscar aluno
+
+Permite consultar um aluno específico a partir de sua matrícula.
+O sistema exibe as notas e a média do aluno.
+
+Exemplo de uso:
+
+Digite a matrícula do aluno: A001
+📘 Aluno encontrado! Notas: (8.0, 7.5, 9.0) | Média: 8.17
+
+
+Caso a matrícula não exista:
+
+❌ Aluno não encontrado.
+
+🏆 5 - Mostrar aprovados e reprovados
+
+Exibe todos os alunos com suas médias e situação final:
+
+Aprovado ✅: média ≥ 7
+
+Reprovado ❌: média < 7
+
+Exemplo de saída:
+
+=== RESULTADO FINAL ===
+Matrícula: A001 | Média: 8.17 | Aprovado ✅
+Matrícula: A002 | Média: 5.50 | Reprovado ❌
+
+📊 6 - Relatórios
+
+Gera relatórios automáticos conforme a opção escolhida:
+
+Alunos cadastrados
+
+Médias individuais
+
+Aprovados e Reprovados
+
+Exemplo:
+
+=== RELATÓRIOS ===
+1 - Alunos cadastrados
+2 - Médias individuais
+3 - Aprovados e Reprovados
+Escolha uma opção: 2
+
+=== LISTA DE ALUNOS E MÉDIAS ===
+Matrícula: A001 | Notas: (8.0, 7.5, 9.0) | Média: 8.17
+
+🚪 0 - Sair
+
+Finaliza o programa exibindo uma mensagem de despedida:
+
+Saindo do sistema...
+
+## 🧠 Estrutura Interna
+Estrutura	Função
+alunos (dict)	Dicionário principal que armazena as matrículas e notas. Ex: {"A001": (8.0, 7.5, 9.0)}
+nomes_cadastrados (set)	Conjunto usado para evitar duplicatas de alunos.
+listas temporárias	Usadas para coletar notas antes de transformá-las em tuplas.
+
+## 🧱 Funções principais
+
+cadastrar_aluno() → Registra um novo aluno.
+
+registrar_notas() → Adiciona as notas do aluno.
+
+listar_alunos_medias() → Exibe alunos com suas médias.
+
+buscar_aluno() → Busca um aluno por matrícula.
+
+mostrar_aprovados_reprovados() → Exibe a situação final.
+
+relatorios() → Gera relatórios de desempenho.
